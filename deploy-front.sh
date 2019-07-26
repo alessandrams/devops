@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Entra no contexto do usuario do front-end
-sudo -i -u pyback bash << EOF
+sudo -i -u node bash << EOF
 
 # Mata o processo anterior
 pkill node
