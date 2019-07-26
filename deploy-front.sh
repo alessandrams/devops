@@ -1,8 +1,7 @@
 #!/bin/bash
 
-sudo su
 # Entra no contexto do usuario do front-end
-su node
+sudo -i -u pyback bash << EOF
 
 # Mata o processo anterior
 pkill node
@@ -15,6 +14,8 @@ yarn build
 
 # Inicializa a aplicacao com o serve
 serve -s build -l 3000 &
+
+EOF
 
 
 
