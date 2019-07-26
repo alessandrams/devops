@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo su
 # Entra no contexto do usuario do front-end
 su node
